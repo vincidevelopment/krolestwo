@@ -1,0 +1,285 @@
+body {
+    color: #131313;
+    background-color: #e2e2e2;
+    font-family: "Playfair Display", serif;
+}
+
+a {
+    color: #131313;
+    transition: 300ms;
+    text-decoration: none;
+}
+a:hover {
+    color: #ff5403;
+    transition: 100ms;
+}
+a:visited {
+    color: #131313;
+}
+a::before {
+    content: "";
+    height: 4px;
+    width: 0;
+    position: absolute;
+    bottom: -2px;
+    background-color: #ff5403;
+    border-radius: 2px;
+    transition: 300ms;
+}
+a:hover::before {
+    width: 100%;
+    transition: 300ms;
+}
+
+.rules:hover {
+    color: #ff5403;
+    transition: 100ms;
+}
+.mods:hover {
+    color: #ff5403;
+    transition: 100ms;
+}
+.home:hover {
+    color: #ff5403;
+    transition: 100ms;
+}
+.no-underline::before{
+    display: none;
+}
+
+@media only screen and (max-width: 767px) { /*smartphones*/
+    .flag {
+        height: 23px;
+        width: 40px;
+        position: fixed;
+        top: 8px;
+        left: 8px;
+        transition: 500ms;
+    }
+    .flag:hover {
+        transform: scale(1.1);
+        transition: 500ms;
+    }
+    .discord-ico {
+        height: 30px;
+        width: 30px;
+        position: fixed;
+        top: 0px;
+        right: 20px;
+    }
+    .discord-ico:hover {
+        animation: forwards wave 500ms;
+    }
+    .navbar {
+        height: 30px;
+        background-color: #e2e2e2;
+        border-bottom: #a5a5a5 2px solid;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .rules {
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+    }
+    .mods {
+        position: absolute;
+        top: 6px;
+        left: 75%;
+        transform: translateX(-75%);
+        font-size: 12px;
+    }
+    .home {
+        position: absolute;
+        top: 6px;
+        left: 20%;
+        transform: translateX(-20%);
+        font-size: 12px;
+    }
+    .footer {
+        height: 30px;
+        background-color: #e2e2e2;
+        border-top: #a5a5a5 2px solid;
+        width: 100%;
+        position: absolute;
+        bottom: -215%;
+        left: 0;
+        z-index: 10;
+    }
+    .legal {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        font-size: 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { /*tablets*/
+    .flag {
+        height: 33px;
+        width: 50px;
+        position: fixed;
+        top: 8px;
+        left: 8px;
+        transition: 500ms;
+    }
+    .flag:hover {
+        transform: scale(1.1);
+        transition: 500ms;
+    }
+    .discord-ico {
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        top: 0;
+        right: 30px;
+    }
+    .discord-ico:hover {
+        animation: forwards wave 500ms;
+    }
+    .navbar {
+        height: 50px;
+        background-color: #e2e2e2;
+        width: 100%;
+        border-bottom: #a5a5a5 2px solid;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .rules {
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+    }
+    .mods {
+        position: absolute;
+        top: 6px;
+        left: 75%;
+        transform: translateX(-75%);
+        font-size: 24px;
+    }
+    .home {
+        position: absolute;
+        top: 6px;
+        left: 25%;
+        transform: translateX(-25%);
+        font-size: 24px;
+    }
+    .footer {
+        height: 50px;
+        background-color: #e2e2e2;
+        border-top: #a5a5a5 2px solid;
+        width: 100%;
+        position: absolute;
+        bottom: -215%;
+        left: 0;
+        z-index: 10;
+    }
+    .legal {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 992px) { /*laptops and pcs*/
+    .flag {
+        height: 33px;
+        width: 50px;
+        position: fixed;
+        top: 8px;
+        left: 8px;
+        transition: 500ms;
+    }
+    .flag:hover {
+        transform: scale(1.1);
+        transition: 500ms;
+    }
+    .discord-ico {
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        top: 0;
+        right: 30px;
+    }
+    .discord-ico:hover {
+        animation: forwards wave 500ms;
+    }
+    .navbar {
+        height: 50px;
+        background-color: #e2e2e2;
+        width: 100%;
+        position: fixed;
+        border-bottom: #a5a5a5 2px solid;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .rules {
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+    }
+    .mods {
+        position: absolute;
+        top: 6px;
+        left: 75%;
+        transform: translateX(-75%);
+        font-size: 24px;
+    }
+    .home {
+        position: absolute;
+        top: 6px;
+        left: 25%;
+        transform: translateX(-25%);
+        font-size: 24px;
+    }
+    .footer {
+        height: 50px;
+        background-color: #e2e2e2;
+        border-top: #a5a5a5 2px solid;
+        width: 100%;
+        position: absolute;
+        bottom: -215%;
+        left: 0;
+        z-index: 10;
+    }
+    .legal {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        font-size: 12px;
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(0deg) scale(1.1);
+    }
+    75% {
+        transform: rotate(-45deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(0deg) scale(1.1);
+    }
+}
