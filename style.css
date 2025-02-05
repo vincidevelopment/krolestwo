@@ -107,7 +107,7 @@ a:hover::before {
         border-top: #a5a5a5 2px solid;
         width: 100%;
         position: absolute;
-        bottom: -225%;
+        bottom: -235%;
         left: 0;
         z-index: 10;
     }
@@ -180,7 +180,7 @@ a:hover::before {
         border-top: #a5a5a5 2px solid;
         width: 100%;
         position: absolute;
-        bottom: -215%;
+        bottom: -225%;
         left: 0;
         z-index: 10;
     }
@@ -253,7 +253,7 @@ a:hover::before {
         border-top: #a5a5a5 2px solid;
         width: 100%;
         position: absolute;
-        bottom: -215%;
+        bottom: -225%;
         left: 0;
         z-index: 10;
     }
